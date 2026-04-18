@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Maior - Escola de Música</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-    <div class="container">
-        <div class="header-content">
-            <div class="logo-container"> 
-                <img src="./imgs/logo.png" alt="Tom Maior">
-                <div class="logo">
-                    <h1>Tom Maior <span>Escola de Música</span></h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container"> 
+                    <img src="./imgs/logo.png" alt="Tom Maior">
+                    <div class="logo">
+                        <h1>Tom Maior <span>Escola de Música</span></h1>
+                    </div>
                 </div>
+                <button id="portal-acess-button">Acessar</button>
             </div>
-
-            <button id="portal-acess-button">Acessar</button>
         </div>
-    </div>
-</header>
+    </header>
 
     <section class="hero">
         <div class="container">
@@ -39,8 +38,7 @@
                         <div class="form-group">
                             <input type="number" id="idade" placeholder="Sua idade" required>
                         </div>
-                        
-                        <div class="form-group" >
+                        <div class="form-group">
                             <select required id="nivel">
                                 <option value="" disabled selected>O quanto você já sabe?</option>
                                 <option value="leigo">não tenho conhecimento prévio algum</option>
@@ -73,47 +71,37 @@
             <h2 class="section-title">Nossas modalidades</h2>
             <div class="cursos-grid">
                 <div class="curso-card">
-                    <div class="card-image" style="background-image: url(imgs/Hannah.png);"></div>
+                    <div class="card-image" style="background-image: url('./imgs/Hannah.png');"></div>
                     <div class="card-content">
                         <h3>Violão</h3>
-                        <!-- <p>Do básico ao avançado. Violão popular, erudito e fingerstyle.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
 
                 <div class="curso-card">
-                    <div class="card-image" style="background-image: url(imgs/kaio.png);" id="card-violao"></div>
+                    <div class="card-image" style="background-image: url('./imgs/kaio.png');" id="card-violao"></div>
                     <div class="card-content">
                         <h3>Teclado</h3>
-                        <!-- <p>Aprenda técnicas, harmonias e repertório completo.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
 
                 <div class="curso-card">
-                    <div class="card-image" style="background-image: url(imgs/Sabrina.png);"></div>
+                    <div class="card-image" style="background-image: url('./imgs/Sabrina.png');"></div>
                     <div class="card-content">
                         <h3>Canto</h3>
-                        <!-- <p>Técnica vocal, respiração e interpretação.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
 
                 <div class="curso-card">
-                    <div class="card-image" style="background-image: url(imgs/Malu.png)"></div>
+                    <div class="card-image" style="background-image: url('./imgs/Malu.png');"></div>
                     <div class="card-content">
                         <h3>Guitarra</h3>
-                        <!-- <p>Rock, blues, solo e improvisação.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
 
                 <div class="curso-card">
-                    <div class="card-image" style="background-image: url(imgs/Iran.png);"></div>
+                    <div class="card-image" style="background-image: url('./imgs/Iran.png');"></div>
                     <div class="card-content">
                         <h3>Bateria</h3>
-                        <!-- <p>Rudimentos, levadas e independência.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
 
@@ -121,8 +109,6 @@
                     <div class="card-image" style="background-image: linear-gradient(135deg, #1e3c72, #2a5298);"></div>
                     <div class="card-content">
                         <h3>Percussão</h3>
-                        <!-- <p>Ritmos brasileiros e latinos.</p> -->
-                        <!-- <a href="#" class="card-button">Saiba mais</a> -->
                     </div>
                 </div>
             </div>
@@ -130,135 +116,88 @@
     </section>
 
     <section class="sobre">
-    <div class="container">
-        <h2 class="section-title">Conheça a Tom Maior</h2>
-        
-        <div class="sobre-carousel-container">
-            <!-- Carrossel -->
-            <div class="sobre-carousel">
-                <!-- SLIDE 1 - Por que escolher -->
-                <div class="carousel-item active">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h3>Por que escolher a Tom Maior?</h3>
-                            <p>Há mais de 10 anos formando músicos e transformando vidas através da música. Nossa metodologia única combina técnica, teoria e prática musical de forma descomplicada e divertida.</p>
-                            <ul class="features">
-                                <li>Professores experientes</li>
-                                <li>Estrutura completa e equipada</li>
-                                <li>Horários flexíveis</li>
-                                <li>Aulas individuais ou em grupo</li>
-                                <li>Eventos e apresentações periódicas</li>
-                            </ul>
-                        </div>
-                        <div class="slide-image">
-                            <img src="imgs/Jadson.png" alt="Professor Jadson">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 2 - Nossa Metodologia -->
-                <div class="carousel-item">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h3>Nossa Metodologia</h3>
-                            <p>Desenvolvemos um método exclusivo que acelera seu aprendizado sem pular etapas. Você aprende na prática desde a primeira aula, com um plano de estudos personalizado para seu objetivo e ritmo.</p>
-                            <!-- <div class="method-stats">
-                                <div class="stat">
-                                    <span class="stat-number">98%</span>
-                                    <span class="stat-label">Aproveitamento</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">500+</span>
-                                    <span class="stat-label">Alunos formados</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">15</span>
-                                    <span class="stat-label">Professores</span>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="slide-image">
-                            <img src="imgs/Andreepablo.png" alt="Aula de música">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 3 - Estrutura -->
-                <div class="carousel-item">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h3>Nossa Estrutura</h3>
-                            <p>Salas climatizadas, equipamentos de última geração e um ambiente pensado para proporcionar a melhor experiência musical.</p>
-                            <ul class="features">
-                                <li>🎸 salas equipadas</li>
-                                <li>🎹 Teclados e pianos digitais</li>
-                                <li>🥁 Baterias profissionais</li>
-                                <li>📚 Biblioteca musical</li>
-                            </ul>
-                        </div>
-                        <div class="slide-image">
-                            <img src="imgs/Jadsonefamilia.png" alt="Estrutura da escola">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SLIDE 4 - Eventos -->
-                <div class="carousel-item">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h3>Eventos e Apresentações</h3>
-                            <p>Proporcionamos aos nossos alunos a oportunidade de se apresentar em eventos, mostras e festivais, colocando em prática todo o aprendizado.</p>
-                            <div class="event-highlights">
-                                <div class="event">
-                                    <span class="event-date">Aulões e oficinas</span>
-                                </div>
-                                <div class="event">
-                                    <span class="event-date">expedições</span>
-                                </div>
-                                <div class="event">
-                                    <span class="event-date">Anualmente</span>
-                                    <span class="event-date">Tom Maior In Concert</span>
-                                </div>
+        <div class="container">
+            <h2 class="section-title">Conheça a Tom Maior</h2>
+            <div class="sobre-carousel-container">
+                <div class="sobre-carousel">
+                    <div class="carousel-item active">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h3>Por que escolher a Tom Maior?</h3>
+                                <p>Há mais de 10 anos formando músicos e transformando vidas através da música.</p>
+                                <ul class="features">
+                                    <li>Professores experientes</li>
+                                    <li>Estrutura completa</li>
+                                    <li>Horários flexíveis</li>
+                                </ul>
+                            </div>
+                            <div class="slide-image">
+                                <img src="./imgs/Jadson.png" alt="Professor Jadson">
                             </div>
                         </div>
-                        <div class="slide-image">
-                            <img src="imgs/andreeyran.png" alt="Eventos musicais">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h3>Nossa Metodologia</h3>
+                                <p>Desenvolvemos um método exclusivo que acelera seu aprendizado.</p>
+                            </div>
+                            <div class="slide-image">
+                                <img src="./imgs/Andreepablo.png" alt="Aula de música">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h3>Nossa Estrutura</h3>
+                                <p>Salas climatizadas e equipamentos de última geração.</p>
+                            </div>
+                            <div class="slide-image">
+                                <img src="./imgs/Jadsonefamilia.png" alt="Estrutura da escola">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h3>Eventos e Apresentações</h3>
+                                <p>Oportunidade de se apresentar em eventos e festivais.</p>
+                            </div>
+                            <div class="slide-image">
+                                <img src="./imgs/andreeyran.png" alt="Eventos musicais">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Controles do Carrossel -->
-            <button class="carousel-btn prev-btn">❮</button>
-            <button class="carousel-btn next-btn">❯</button>
+                <button class="carousel-btn prev-btn">❮</button>
+                <button class="carousel-btn next-btn">❯</button>
 
-            <!-- Indicadores -->
-            <div class="carousel-indicators">
-                <button class="indicator active" data-index="0"></button>
-                <button class="indicator" data-index="1"></button>
-                <button class="indicator" data-index="2"></button>
-                <button class="indicator" data-index="3"></button>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-index="0"></button>
+                    <button class="indicator" data-index="1"></button>
+                    <button class="indicator" data-index="2"></button>
+                    <button class="indicator" data-index="3"></button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="depoimentos">
         <div class="container">
             <h2 class="section-title">O que nossos alunos dizem</h2>
             <div class="depoimentos-grid">
                 <div class="depoimento-card">
-                    <p class="depoimento-text">"A Tom Maior mudou minha relação com a música. Em 6 meses de aula já estava tocando em uma banda!"</p>
+                    <p class="depoimento-text">"A Tom Maior mudou minha relação com a música."</p>
                     <div class="depoimento-author">João Silva, aluno de guitarra</div>
                 </div>
-
                 <div class="depoimento-card">
-                    <p class="depoimento-text">"Excelente escola! Professores atenciosos e metodologia muito eficiente. Recomendo demais!"</p>
+                    <p class="depoimento-text">"Excelente escola! Recomendo demais!"</p>
                     <div class="depoimento-author">Maria Santos, aluna de canto</div>
                 </div>
-
                 <div class="depoimento-card">
-                    <p class="depoimento-text">"Finalmente realizei meu sonho de tocar violão. Ambiente acolhedor e aprendizado garantido."</p>
+                    <p class="depoimento-text">"Finalmente realizei meu sonho de tocar violão."</p>
                     <div class="depoimento-author">Pedro Oliveira, aluno de violão</div>
                 </div>
             </div>
@@ -270,7 +209,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Tom Maior</h4>
-                    <p>Sua jornada musical começa aqui. Venha fazer parte da nossa família!</p>
+                    <p>Sua jornada musical começa aqui.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Contato</h4>
@@ -278,17 +217,15 @@
                     <p>✉️ contato@tommaior.com.br</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Horário de Funcionamento</h4>
+                    <h4>Horário</h4>
                     <p>Segunda a Sexta: 8h às 19h</p>
                     <p>Sábados: 8h às 12h</p>
-                    <p>Domingos: Fechado</p>
                 </div>
                 <div class="footer-section">
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/escolatommaior/" class="social-link"><img src="imgs/instagram-icon.png" class="social-icon" alt="icone do instagram"></a>
-                        <a href="https://www.facebook.com/tom.maior.50?locale=pt_BR" class="social-link"><img src="imgs/facebook-icon.png" class="social-icon" alt="icone do facebook"></a>
-
+                        <a href="https://www.instagram.com/escolatommaior/" class="social-link"><img src="./imgs/instagram-icon.png" class="social-icon" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/tom.maior.50" class="social-link"><img src="./imgs/facebook-icon.png" class="social-icon" alt="Facebook"></a>
                     </div>
                 </div>
             </div>
@@ -297,7 +234,7 @@
             </div>
         </div>
     </footer>
-</body>
 
-<script src="Script.js"></script>
+    <script src="./Script.js"></script>
+</body>
 </html>
